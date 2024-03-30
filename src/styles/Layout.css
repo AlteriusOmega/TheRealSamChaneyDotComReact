@@ -1,0 +1,36 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content::before,
+.content::after {
+    content: '𝄔';
+    font-size: 25em;
+    color: transparent;
+    background:  linear-gradient(to bottom, blue, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* .content::before {
+    left: 0;
+} */
+
+.content::after {
+    transform: scaleX(-1); 
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+.title {
+    font-size: 5em;
+    font-weight: 500;
+    margin-bottom: 0;
+
+}

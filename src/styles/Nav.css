@@ -1,6 +1,24 @@
 nav {
-    position: fixed;
-    top: 100;
-    left: 0;
-    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-main::before,
+.nav-main::after {
+    content: '𝄕';
+    font-size: 10em;
+    color: transparent;
+    background:  linear-gradient(to bottom, blue, purple);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.nav-main::after {
+    transform: scaleX(-1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0px;
 }

@@ -4,8 +4,8 @@ import '../styles/Nav.css';
 
 const Nav: React.FC = () => {
     return (
-        <nav>
-            <ul style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+        <nav className="nav-main">
+            <ul>
                 <li>
                     <Link to="/">Home</Link>
                 </li>

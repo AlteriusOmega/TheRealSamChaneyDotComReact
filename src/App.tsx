@@ -4,6 +4,7 @@ import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import './styles/App.css';
 
 const App: React.FC = () => {
   return (
