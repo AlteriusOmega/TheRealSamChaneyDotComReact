@@ -5,7 +5,9 @@ import '../styles/Nav.css';
 const Nav: React.FC = () => {
     return (
         <nav className="nav-main">
+            <div className="gradient-text" style={{fontSize:"10em"}}>{"𝄕"}</div>    
             <ul>
+
                 <li>
                     <Link to="/">Home</Link>
                 </li>
@@ -16,6 +18,8 @@ const Nav: React.FC = () => {
                     <Link to="/contact">Contact</Link>
                 </li>
             </ul>
+            <div className="gradient-text" style={{fontSize:"10em", transform: "scaleX(-1)"}}>{"𝄕"}</div>    
+
         </nav>
     );
 };

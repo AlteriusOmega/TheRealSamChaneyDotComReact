@@ -3,7 +3,7 @@ nav {
     align-items: center;
 }
 
-.nav-main::before,
+/* .nav-main::before,
 .nav-main::after {
     content: '𝄕';
     font-size: 10em;
@@ -15,7 +15,7 @@ nav {
 
 .nav-main::after {
     transform: scaleX(-1);
-}
+} */
 
 ul {
     list-style-type: none;
