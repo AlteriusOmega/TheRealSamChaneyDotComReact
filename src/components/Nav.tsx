@@ -7,8 +7,9 @@ const Nav: React.FC = () => {
         <nav className="nav-main">
             <div className="gradient-text" style={{fontSize:"10em"}}>{"𝄕"}</div>    
             <ul>
-
                 <li>
+            <div className="test">asd;lfkaj;lkj</div>
+
                     <Link to="/">Home</Link>
                 </li>
                 <li>

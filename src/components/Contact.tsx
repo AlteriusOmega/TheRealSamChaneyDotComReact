@@ -4,6 +4,15 @@ import Layout from './Layout';
 const Home: React.FC = () => {
     return (
         <div>
+            <style>
+                {`
+                    :root {
+                        --gradient-start: red;
+                        --gradient-end: orange;
+                    }
+                `}
+            </style>
+
             <h1>Contact</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 

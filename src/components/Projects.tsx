@@ -4,6 +4,14 @@ import Layout from "./Layout";
 const Projects: React.FC = () => {
     return (
         <div>
+            <style>
+                {`
+                    :root {
+                        --gradient-start: green;
+                        --gradient-end: teal;
+                    }
+                `}
+            </style>        
             <h1>Projects</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 

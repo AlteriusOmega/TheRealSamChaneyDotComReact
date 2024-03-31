@@ -4,6 +4,14 @@ import Layout from './Layout';
 const Home: React.FC = () => {
     return (
         <div>
+            <style>
+                {`
+                    :root {
+                        --gradient-start: blue;
+                        --gradient-end: purple;
+                    }
+                `}
+            </style>  
             <h1>Home</h1>
             <p>This is my webpage!</p>
             <p>
