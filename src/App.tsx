@@ -25,16 +25,16 @@ const AppLayout: React.FC = () => {
   
     switch (location.pathname) {
       case "/contact":
-        gradientStart = "red";
-        gradientEnd = "orange";
+        gradientStart = "var(--gradient-start-contact)"
+        gradientEnd = "var(--gradient-end-contact)"
         break;
       case "/projects":
-        gradientStart = "green";
-        gradientEnd = "blue";
+        gradientStart = "var(--gradient-start-projects)"
+        gradientEnd = "var(--gradient-end-projects)"
         break;
-      default:
-        gradientStart = "blue";
-        gradientEnd = "purple";
+    default:
+        gradientStart = "var(--gradient-start-home)"
+        gradientEnd = "var(--gradient-end-home)"
     }
   
     root.style.setProperty("--gradient-start", gradientStart);
