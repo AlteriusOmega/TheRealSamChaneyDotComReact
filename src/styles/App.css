@@ -1,15 +1,26 @@
-:root {
-    --gradient-start: blue;
-    --gradient-end: purple;
+@property --gradient-start {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: blue;
+}
+
+@property --gradient-end {
+    syntax: "<color>";
+    inherits: true;
+    initial-value: purple;
 }
 
 .gradient-text {
-    /* font-size: 25em; */
+    font-size: 25em;
     color: transparent;
     background:  linear-gradient(to bottom, var(--gradient-start), var(--gradient-end));
+    --gradient: linear-gradient(var(--gradient-start), var(--gradient-end))
+    background: var(--gradient-start)
+    background-image:var(--gradient)
     -webkit-background-clip: text;
     background-clip: text;
-    transition: background 0.5s ease;
+    transition-property: --gradient-start, --gradient-end;
+    transition-duration: 1s;
 }
 
 body {
