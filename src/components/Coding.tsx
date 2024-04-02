@@ -1,10 +1,9 @@
 import React from "react";
-import Layout from "./Layout";
 
-const Projects: React.FC = () => {
+const Coding: React.FC = () => {
     return (
         <div>
-            <h1>Projects</h1>
+            <h1>Coding</h1>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
                 Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper 
@@ -25,4 +24,4 @@ const Projects: React.FC = () => {
     );
 };
 
-export default Projects;
+export default Coding;

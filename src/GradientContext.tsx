@@ -35,7 +35,7 @@ export const GradientProvider: React.FC<LayoutProps> = ({ children }) => {
         setGradientStart('blue');
         setGradientEnd('green');
         break;
-      case '/projects':
+      case '/coding':
         setGradientStart('purple');
         setGradientEnd('pink');
         break;

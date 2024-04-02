@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from "react-route
 import Layout from "./components/Layout";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
-import Projects from "./components/Projects";
+import Coding from "./components/Coding";
 import './styles/App.css';
 
 const App: React.FC = () => {
@@ -28,9 +28,9 @@ const AppLayout: React.FC = () => {
         gradientStart = "var(--gradient-start-contact)"
         gradientEnd = "var(--gradient-end-contact)"
         break;
-      case "/projects":
-        gradientStart = "var(--gradient-start-projects)"
-        gradientEnd = "var(--gradient-end-projects)"
+      case "/coding":
+        gradientStart = "var(--gradient-start-coding)"
+        gradientEnd = "var(--gradient-end-coding)"
         break;
     default:
         gradientStart = "var(--gradient-start-home)"
@@ -46,7 +46,7 @@ const AppLayout: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/coding" element={<Coding />} />
       </Routes>
     </Layout>
   );

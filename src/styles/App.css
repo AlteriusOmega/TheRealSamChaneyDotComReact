@@ -1,8 +1,8 @@
 :root {
     --gradient-start-contact: rgb(13, 231, 71);
     --gradient-end-contact: rgb(2, 205, 251);
-    --gradient-start-projects: rgb(10, 238, 219);
-    --gradient-end-projects: rgb(49, 16, 233);
+    --gradient-start-coding: rgb(10, 238, 219);
+    --gradient-end-coding: rgb(49, 16, 233);
     --gradient-start-home: blue;
     --gradient-end-home: purple;
 }
