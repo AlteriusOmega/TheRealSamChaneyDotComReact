@@ -4,7 +4,7 @@ import '../styles/Nav.css';
 
 const Nav: React.FC = () => {
     return (
-        <nav className="nav-main">
+        <nav className="nav-container">
             <div className="gradient-text" style={{fontSize:"10em"}}>{"𝄕"}</div>    
             <ul>
 

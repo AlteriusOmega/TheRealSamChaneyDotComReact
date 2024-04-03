@@ -13,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     
     
     return (
-        <div className="main-container">
+        <div className="layout-container">
             <div className="header">
                 <h1 className="title">TheRealSamChaney.com</h1>
             </div>

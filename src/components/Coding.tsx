@@ -1,25 +1,53 @@
 import React from "react";
+import "../styles/Coding.css";
 
 const Coding: React.FC = () => {
     return (
-        <div>
+        <div className="coding-container">
             <h1>Coding</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. 
-                Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper 
-                porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
-                per inceptos himenaeos. Curabitur sodales ligula in libero. 
-            </p>
-            <p>
-                Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. 
-                Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, 
-                luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. 
-            </p>
-            <p>
-                Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh. Quisque volutpat condimentum velit. 
-                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, 
-                urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. 
-            </p>
+            <div className="scroll-text">
+                {/* <div className="content-text"> */}
+                    <p>
+                        For the past decade or so, I've been professionally developing reliable, maintainable, and readable code for many different companies and clients. My passion is for finding elegant and efficient solutions for complicated problems, and for learning new tools and applying them to tackle new obstacles. My projects range from web applications running on embedded hardware, to highway toll system health monitors to Android apps and more, and utilizing a broad range of languages like C#, Python, C++, JavaScript and Java.
+                    </p>
+                    <p>
+                        My odyssey with coding started back in the 6th grade when I learned HTML and, seeing the vast possibilities, I started to create little video-games in pure HTML. I did this by using images as game objects, like for example a picture of a ball, and adding movement and "physics" by nesting multiple marquees inside each-other to have it bounce around on screen. Points could be awarded by making the ball image a link requiring the player to use coordination and dexterity to catch it by clicking it.
+                    </p>
+                    <p>
+                        Fast-forward to junior high, my interest in coding and web-develop grew and flourished when I took Web Page Design, learning fundamentals like JavaScript, CSS, site design, HTTP, and graphics design. We integrated all of these skills and knowledge with tools like Adobe Dreamweaver, Fireworks, and more to make fully fledged web application projects. I fondly remember creating a website for a local photographer, implementing an image-viewer widget to organize and showcase their portfolio, all with a modern industrial aesthetic for some visual flair and site personality.  I continued this journey by diving into game-making tools like Open Zelda which allowed me to create my own game levels from scratch, encoding physics and puzzles, and item behaviors in a custom Object-Oriented language. 
+                    </p>
+                    <p>
+                        My coding skills took a big leap in college where I studied C and C++ and learned the ins and outs of Linux. This gave me the understanding of lower-level language and dealing with memory and pointers directly. I got even closer to the metal so to speak when I later took a course on EEPROM programming, where we wrote code in Assembly, directly in hexadecimal. This is about as close as you can get to writing the actual machine code binary that the processor actually runs. This low-level coding gave me a rock-solid foundation of understanding for how code works from way down in the processor's stack all the way up to the high-level abstract classes and libraries.
+                    </p>
+                    <p>
+                        With this foundation, I earned my first job as an Applications Engineer for 3M just a year after graduating with my engineering degree in their automated parking technology division. At this role, I got to sink my teeth into some tasty challenges that served as appetizers for my coding career. First, we had to program hundreds of EEPROM chips for our parking payment machines, each one with slightly different configuration of options, and it was my job to compile and burn in these options into the firmware of the chip. This was a time consuming task so I took it upon myself to develop automation software for them in C and VBA to automatically convert customer orders to spreadsheets to dramatically increase the efficiency of our chip programming process.
+                    </p>
+                    <p>
+                        Then, the parking division of 3M evolved into a highway tolling technology team, and was then purchased by tolling tech company Neology Inc. At Neology, we had some more savory coding problem entrees for me to dig in on. The first conundrum was that our automated tolling system had to be audited to ensure its accuracy which involved a laborious process where a person view many hours of tollway footage from the CCTV cameras and painstakingly compares it to the transactions we generated, ensuring the vehicles in the video match the car type, lane, etc. This was of course quite inefficient and costly so I worked on developing a desktop application for the auditor to use to aid them in this auditing process by giving them powerful tools like automatically jumping forward and back to the exact timestamp of each transaction rather than watching the video in real time. It also showed comprehensive information from the transaction over the video to allow for very quick comparisons. 
+                    </p>
+                    <p>
+                        Another quandary we faced was that tolling systems require many different sensors like loops, lasers, and RFID readers, and all of these at tens of different toll points means hundreds of instruments in one system where each one could potentially have an issue. Some of my colleagues were tasked with manually checking these devices using a GUI which was lengthy and unproductive. To resolve this I wrote a fully automated Python application which queried every single sensor at all toll points in the system, used business logic to judge the current state, and generate an Excel spreadsheet tabulating all errors and warnings in the system, complete with color-coded conditional formatting and separate organized sheets.
+                    </p>
+                    <p>
+                        After Neology, I spent time on my own deepening my full stack web development skills, learning all the current frameworks including Angular and React as well as backend tools like Node, NPM and Express as well as .NET tools like ASP.NET. These skills helped me land a software engineering contracting job with Schneider Electric and their industrial sensor team. The product the team managed was a suite of hardened sensors that all connect to a wireless hub that can be connected to remotely to track the status of all the various measurements in the system like temperature, pressure, voltage and more. The issue they faced is that the way the customer viewed this data was through an ancient web application that was written mostly by embedded code developers who worked only in C and had never touched Javascript before leading to a very sub-par and ugly website with terrible code that was full of single-letter variable and function names and outdated methods like XHR.
+                    </p>
+                    <p>
+                        I stepped in, learned the codebase of the current website and set to work on overhauling it and refactoring it. One of the challenges were those aforementioned single-letter variable and function names which were a leftover from a time in the past where the code was minified and the un-minified code was lost. This required a sort of reverse-engineering to translate the code into something human readable, like a digital Rosetta Stone. Another interesting challenge was that since the device was hardened, wireless and battery-powered, the entire website had to run on embedded hardware, so all the memory and processing power I had to use was from a simple WiFi module chip. This came with a couple of difficulties. First it of course meant I had very limited memory and processing power so I had to use creative solutions like generating images dynamically using custom SVG code rather than image files, as well as keeping all styling in the same file. Second, it meant I was working with binary data from the embedded code itself. That meant I had to work hand-in-hand with the firmware team to know exactly what types of data were being delivered from the sensors, like unsigned 8-bit integers or signed 8-bit floats. I also had to use tools specifically designed for these lower-level data types like DataView which allowed me to parse the binary data so I could integrate it into the web application.
+                    </p>
+                    <p>
+                        Since I finished the Schneider contract, I have been working to build up my own independent coding contracting company. I registered the DBA Designers Mind Technologies and have been doing work under that name since. One client I had worked at a personal fitness company and his issue was that the process for signing up new customers was convoluted and slow. I worked with him to right this by writing some serverless functions using Amazon AWS Lambda. These functions could be remotely triggered by his website and automatically add the new user to their system as well as dynamically generating and sending out SMS text messages to new customers with links to their respective store locations. I integrated it with other AWS tools like S3 for storing images, and RDS to store user data, with logging using CloudWatch.
+                    </p>
+                    <p>
+                        With another client I worked with a colleague on a Flask application to tabulate data from a popular Android baseball statistics app. This presented some very fun predicaments, one being how do we get data from a closed-off Android application? That one was solved by creating an Android emulator using Android studio, rooting it, and installing some software to allow us to listen to HTTP requests coming out of the digital phone. With this we were able to install the app, filter the traffic specific to it, and extract the HTTP requests it was using. Then we could use the security tokens and make our own requests directly to their database to get just the data we were interested in. Quickly we were able to tabulate the data our client was looking for and generate spreadsheets for them. 
+                    </p>
+                    <p>
+                        Then we were presented with quite the twist that took the project in a whole new direction. The client wanted to know who was at bat during each pitch. I looked tirelessly through the data to find this tid-bit of information and to my dismay discovered that it was not present anywhere. The database did not tell the application who was at bat, but rather the app used the rules of baseball to calculate who would have been at bat at that time using the batting lineup. This meant that this one little client reqest to know which player was currently batting required us to more than double the project scope. It meant we had to encode basically all of the rules of baseball into our Flask app, just for that one piece of information. 
+                    </p>
+                    <p>
+                        So, that's what we did. For weeks I went about making classes and methods that carefully tracked the state of the baseball game in each moment, keeping track of strikes, balls, outs, batting lineups, and defensive positions for every player and team. We had to make sure we did everything in order that the data was entered into the app. I then wrote code that translated every event in the game into human-readable text that we could compare against the app's play summaries to make sure we were staying in lock-step. I would go through entire games to find where we diverged from their summary then find the root cause of the divergence and update our logic to match. After some time though we had finally slain the beast and completely encoded the rules of baseball so we could generate play-by-play descriptions of any game in the app, and more importantly, calculate stats for each player and generate detailed spreadsheets for them, thus satisfying our client.
+                    </p>
+                {/* </div> */}
+            </div>
         </div>
     );
 };

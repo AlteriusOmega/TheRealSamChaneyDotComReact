@@ -1,0 +1,9 @@
+.coding-container{
+    height: 500px;
+}
+
+.scroll-text{
+    height: 100%;
+    
+    overflow-y: auto;
+}

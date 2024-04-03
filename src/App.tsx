@@ -51,5 +51,4 @@ const AppLayout: React.FC = () => {
     </Layout>
   );
 };
-
 export default App;
